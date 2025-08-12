@@ -1,0 +1,58 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/
+vpwm_generator
+Z0 !s110 1754976983
+!i10b 1
+!s100 HIV;m0lY5^a7MBin3kXC:1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IQhRmERNBfYYRI8@oX;Pj03
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/pc/smart_fan_controller
+w1754975248
+8C:/Users/pc/smart_fan_controller/vhdl/pwm_generator.v
+FC:/Users/pc/smart_fan_controller/vhdl/pwm_generator.v
+!i122 10
+L0 1 16
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1754976983.000000
+!s107 C:/Users/pc/smart_fan_controller/vhdl/pwm_generator.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pc/smart_fan_controller/vhdl/pwm_generator.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vtb_pwm_generator
+R0
+!i10b 1
+!s100 lDGJF0V1ZLLV^X^EoaN>_0
+R1
+IcCL0;kHIcX9j8c?JkTX8Q1
+R2
+R3
+w1754975262
+8C:/Users/pc/smart_fan_controller/vhdl/tb_pwm_generator.v
+FC:/Users/pc/smart_fan_controller/vhdl/tb_pwm_generator.v
+!i122 11
+L0 3 42
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/pc/smart_fan_controller/vhdl/tb_pwm_generator.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/pc/smart_fan_controller/vhdl/tb_pwm_generator.v|
+!i113 1
+R6
+R7

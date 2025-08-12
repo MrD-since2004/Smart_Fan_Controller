@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Smart Fan Controller</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: white;
+            margin: 0; padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #5c2a82; /* royal purple */
+            color: white;
+            border-radius: 12px;
+            padding: 30px 40px;
+            width: 360px;
+            box-shadow: 0 6px 20px rgba(92, 42, 130, 0.5);
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 24px;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 6px;
+            font-weight: 600;
+            text-align: left;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 10px 8px;
+            border-radius: 6px;
+            border: none;
+            font-size: 16px;
+        }
+        input[readonly] {
+            background: #9174b9;
+            cursor: not-allowed;
+        }
+        button {
+            margin-top: 25px;
+            width: 100%;
+            padding: 12px 0;
+            background: #dda0dd; /* plum */
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: 600;
+            color: #3c005c;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background: #b374b3;
+        }
+        #fan-container {
+            margin-top: 30px;
+        }
+        #fan {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+            animation-name: spin;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        #status-text {
+            margin-top: 20px;
+            font-weight: 600;
+            font-size: 18px;
+            color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Fan Controller</h1>
+
+        <form method="POST" action="/">
+            <label for="duty">Set Duty (%)</label>
+            <input type="number" id="duty" name="duty" min="0" max="100" required />
+
+            <label for="time">Time (seconds)</label>
+            <input type="number" id="time" name="time" min="1" placeholder="Enter time in seconds" required />
+
+            <label for="defaultDuty">Default Duty (%)</label>
+            <input type="number" id="defaultDuty" name="defaultDuty" value="{{ default_duty }}" readonly />
+
+            <button type="submit">Run Simulation</button>
+        </form>
+
+        <div id="fan-container">
+            <img id="fan" src="{{ url_for('static', filename='img/fan.png') }}" alt="Fan Image" />
+            <div id="status-text">Current Duty: <span id="current-duty">{{ current_duty }}</span>%</div>
+        </div>
+    </div>
+
+    <script>
+        const fan = document.getElementById('fan');
+        const currentDutySpan = document.getElementById('current-duty');
+
+        function updateFanSpeed(duty) {
+            // Map duty (0-100) to rotation duration (slow to fast)
+            // Max speed: 0.5s per rotation, Min speed: 5s per rotation (practically off)
+            const minDuration = 0.5; // seconds (fastest)
+            const maxDuration = 5;   // seconds (slowest)
+
+            let duration = maxDuration - ((duty / 100) * (maxDuration - minDuration));
+            duration = Math.max(minDuration, duration);
+            fan.style.animationDuration = duration + "s";
+        }
+
+        async function fetchCurrentDuty() {
+            try {
+                const response = await fetch('/get_status');
+                const data = await response.json();
+                const duty = data.duty;
+                currentDutySpan.textContent = duty;
+                updateFanSpeed(duty);
+            } catch (e) {
+                console.error('Error fetching duty:', e);
+            }
+        }
+
+        // Poll every 1 second
+        setInterval(fetchCurrentDuty, 1000);
+
+        // Initial call
+        fetchCurrentDuty();
+    </script>
+</body>
+</html>

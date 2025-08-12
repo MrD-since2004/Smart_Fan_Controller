@@ -1,0 +1,123 @@
+Reading pref.tcl
+
+# 2020.1
+
+# do {C:\Users\pc\smart_fan_controller\vhdl\simulate.do}
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:55:49 on Aug 12,2025
+# vlog pwm_generator.v 
+# -- Compiling module pwm_generator
+# 
+# Top level modules:
+# 	pwm_generator
+# End time: 03:55:50 on Aug 12,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:55:50 on Aug 12,2025
+# vlog tb_pwm_generator.v 
+# -- Compiling module tb_pwm_generator
+# ** Warning: tb_pwm_generator.v(8): (vlog-2597) '3000000000' is being treated as 32-bit signed integer and will overflow.
+# 
+# Top level modules:
+# 	tb_pwm_generator
+# End time: 03:55:50 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim -c work.tb_pwm_generator 
+# Start time: 03:55:50 on Aug 12,2025
+# Loading work.tb_pwm_generator
+# Loading work.pwm_generator
+# Starting simulation with default duty: 128
+# ** Note: $stop    : tb_pwm_generator.v(41)
+#    Time: 10 ms  Iteration: 0  Instance: /tb_pwm_generator
+# Break in Module tb_pwm_generator at tb_pwm_generator.v line 41
+# Stopped at tb_pwm_generator.v line 41
+# End time: 03:55:53 on Aug 12,2025, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+
+
+Reading pref.tcl
+
+# 2020.1
+
+# do {C:\Users\pc\smart_fan_controller\vhdl\simulate.do}
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:55:52 on Aug 12,2025
+# vlog pwm_generator.v 
+# -- Compiling module pwm_generator
+# 
+# Top level modules:
+# 	pwm_generator
+# End time: 03:55:52 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:55:52 on Aug 12,2025
+# vlog tb_pwm_generator.v 
+# -- Compiling module tb_pwm_generator
+# ** Warning: tb_pwm_generator.v(8): (vlog-2597) '3000000000' is being treated as 32-bit signed integer and will overflow.
+# 
+# Top level modules:
+# 	tb_pwm_generator
+# End time: 03:55:52 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim -c work.tb_pwm_generator 
+# Start time: 03:55:52 on Aug 12,2025
+# Loading work.tb_pwm_generator
+# Loading work.pwm_generator
+# Starting simulation with default duty: 128
+# ** Note: $stop    : tb_pwm_generator.v(41)
+#    Time: 10 ms  Iteration: 0  Instance: /tb_pwm_generator
+# Break in Module tb_pwm_generator at tb_pwm_generator.v line 41
+# Stopped at tb_pwm_generator.v line 41
+# End time: 03:55:56 on Aug 12,2025, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+
+
+Reading pref.tcl
+
+# 2020.1
+
+# do {C:\Users\pc\smart_fan_controller\vhdl\simulate.do}
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:56:09 on Aug 12,2025
+# vlog pwm_generator.v 
+# -- Compiling module pwm_generator
+# 
+# Top level modules:
+# 	pwm_generator
+# End time: 03:56:09 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:56:09 on Aug 12,2025
+# vlog tb_pwm_generator.v 
+# -- Compiling module tb_pwm_generator
+# ** Warning: tb_pwm_generator.v(8): (vlog-2597) '4000000000' is being treated as 32-bit signed integer and will overflow.
+# 
+# Top level modules:
+# 	tb_pwm_generator
+# End time: 03:56:09 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim -c work.tb_pwm_generator 
+# Start time: 03:56:09 on Aug 12,2025
+# Loading work.tb_pwm_generator
+# Loading work.pwm_generator
+# Starting simulation with default duty: 128
+# ** Note: $stop    : tb_pwm_generator.v(41)
+#    Time: 10 ms  Iteration: 0  Instance: /tb_pwm_generator
+# Break in Module tb_pwm_generator at tb_pwm_generator.v line 41
+# Stopped at tb_pwm_generator.v line 41
+# End time: 03:56:13 on Aug 12,2025, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+
+

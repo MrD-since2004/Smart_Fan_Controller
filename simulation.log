@@ -1,0 +1,81 @@
+
+--- Simulation for duty 25 start ---
+Reading pref.tcl
+
+# 2020.1
+
+# do {C:\Users\pc\smart_fan_controller\vhdl\simulate.do}
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:28:15 on Aug 12,2025
+# vlog pwm_generator.v 
+# -- Compiling module pwm_generator
+# 
+# Top level modules:
+# 	pwm_generator
+# End time: 10:28:15 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:28:15 on Aug 12,2025
+# vlog tb_pwm_generator.v 
+# -- Compiling module tb_pwm_generator
+# ** Warning: tb_pwm_generator.v(28): (vlog-2275) Existing module 'tb_pwm_generator' will be overwritten.
+# -- Compiling module tb_pwm_generator
+# 
+# Top level modules:
+# 	tb_pwm_generator
+# End time: 10:28:15 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim -c work.tb_pwm_generator -do "run 15000000; quit" 
+# Start time: 10:28:15 on Aug 12,2025
+# Loading work.tb_pwm_generator
+# Loading work.pwm_generator
+# run 15000000
+# Simulation started for duty  25
+#  quit
+# End time: 10:28:16 on Aug 12,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+--- Simulation for duty 25 end ---
+
+--- Reverted to default duty 128 ---
+Reading pref.tcl
+
+# 2020.1
+
+# do {C:\Users\pc\smart_fan_controller\vhdl\simulate.do}
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:28:22 on Aug 12,2025
+# vlog pwm_generator.v 
+# -- Compiling module pwm_generator
+# 
+# Top level modules:
+# 	pwm_generator
+# End time: 10:28:22 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:28:22 on Aug 12,2025
+# vlog tb_pwm_generator.v 
+# -- Compiling module tb_pwm_generator
+# ** Warning: tb_pwm_generator.v(28): (vlog-2275) Existing module 'tb_pwm_generator' will be overwritten.
+# -- Compiling module tb_pwm_generator
+# 
+# Top level modules:
+# 	tb_pwm_generator
+# End time: 10:28:22 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim -c work.tb_pwm_generator -do "run 15000000; quit" 
+# Start time: 10:28:22 on Aug 12,2025
+# Loading work.tb_pwm_generator
+# Loading work.pwm_generator
+# run 15000000
+# Simulation started for duty 128
+#  quit
+# End time: 10:28:22 on Aug 12,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

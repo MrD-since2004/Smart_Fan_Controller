@@ -1,0 +1,17 @@
+C:/Users/pc/smart_fan_controller/vhdl/tb_pwm_generator.v {2 {vlog -work work -stats=none C:/Users/pc/smart_fan_controller/vhdl/tb_pwm_generator.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module tb_pwm_generator
+** Warning: C:/Users/pc/smart_fan_controller/vhdl/tb_pwm_generator.v(3): (vlog-13233) Design unit "tb_pwm_generator" already exists and will be overwritten. Overwriting a VHDL entity with a Verilog module.
+
+Top level modules:
+	tb_pwm_generator
+
+} {} {}} C:/Users/pc/smart_fan_controller/vhdl/pwm_generator.v {2 {vlog -work work -stats=none C:/Users/pc/smart_fan_controller/vhdl/pwm_generator.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module pwm_generator
+** Warning: C:/Users/pc/smart_fan_controller/vhdl/pwm_generator.v(1): (vlog-13233) Design unit "pwm_generator" already exists and will be overwritten. Overwriting a VHDL entity with a Verilog module.
+
+Top level modules:
+	pwm_generator
+
+} {} {}}
