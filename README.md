@@ -36,5 +36,5 @@ Notes
 - This project can be extended for real FPGA implementation.
 - The simulation demonstrates PWM behavior, which controls fan speed by adjusting the power ON time.
 
-MIT License
+
 
